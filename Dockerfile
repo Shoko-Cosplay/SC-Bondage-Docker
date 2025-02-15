@@ -21,5 +21,5 @@ RUN apt install -y ffmpeg
 
 # Xdebug (disabled by default, but installed if required)
 ADD php.ini /usr/local/etc/php/conf.d/
-CP xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
+COPY xdebug.ini /usr/local/etc/php/conf.d/xdebug.ini
 WORKDIR /var/www
